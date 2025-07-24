@@ -2,7 +2,7 @@ name: ZAP Baseline
 
 on:
   schedule:
-    - cron: '0 2 * * *'   # nightly at 02:00 CST
+    - cron: '0 2 * * *'   # nightly at 02:00 UTC
   workflow_dispatch:
 
 jobs:
