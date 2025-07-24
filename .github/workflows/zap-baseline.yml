@@ -28,3 +28,4 @@ jobs:
         with:
           target: 'http://localhost:8000'
           fail_action: true
+          cmd_options: '-w 3'
