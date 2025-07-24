@@ -1,8 +1,14 @@
 name: ZAP Baseline
 
 on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   schedule:
-    - cron: '0 2 * * *'   # nightly at 02:00 CST
+    - cron: '0 2 * * *'      # nightly scan
+  workflow_dispatch:
+
   workflow_dispatch:
 
 jobs:
