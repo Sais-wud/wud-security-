@@ -1,9 +1,14 @@
 name: ZAP Baseline
 
 on:
+  push:
+    branches: [ main ]          # run after merge
+  pull_request:                 # run on every PR
+    branches: [ main ]
   schedule:
-    - cron: '0 2 * * *'   # nightly at 02:00 UTC
-  workflow_dispatch:
+    - cron: '0 2 * * *'         # nightly 02:00 UTC
+  workflow_dispatch:            # manual “Run workflow” button
+
 
 jobs:
   zap:
