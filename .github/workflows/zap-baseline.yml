@@ -9,8 +9,6 @@ on:
     - cron: '0 2 * * *'      # nightly scan
   workflow_dispatch:
 
-  workflow_dispatch:
-
 jobs:
   zap:
     runs-on: ubuntu-latest
